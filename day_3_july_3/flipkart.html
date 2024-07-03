@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            width: 300px;
+            height: 400px;
+        }
+
+        button {
+            padding: 15px 50px;
+            color: white;
+            font-weight: 500;
+            border: none;
+            border-radius: 2px;
+        }
+
+        #btn1 {
+            background-color: orange;
+        }
+
+        #btn2 {
+            background-color: orangered;
+        }
+    </style>
+
+    <script>
+        function addToCart() {
+            alert('Your Item got added to the cart')
+        }
+        function buyNow() {
+            alert('buynow function called')
+        }
+    </script>
+
+</head>
+
+<body>
+    <img
+        src="https://rukminim2.flixcart.com/image/832/832/l3t2fm80/backpack/a/i/8/-original-imageunnaaqhfmt8.jpeg?q=70&amp;crop=false" />
+    <br />
+    <button id="btn1" onclick="addToCart()">ADD TO CART</button>
+    <button id="btn2" onclick="buyNow()">BUY NOW</button>
+</body>
+
+</html>

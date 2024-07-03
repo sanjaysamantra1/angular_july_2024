@@ -1,0 +1,40 @@
+How to Use VisualStudioCode
+===========================
+1.Download and install vscode
+  https://code.visualstudio.com/download
+
+2. install below vscode extensions
+   Go to extensions tab --> search (open in browser)
+   Go to extensions tab --> search (live server)
+
+3. Create an HTML file & content
+   !  (generates HTML boilerplate code)
+
+4. To RUn HTML file, use the below shortcut
+   alt + b
+   alt + shift + b
+
+
+UI Development
+===============
+HTML - content of a webpage
+CSS - for styling
+Bootstrap - Responsiveness + pre-defined classes/components-button,table,carousel,modal,card
+Javascript - behaviour of a webpage
+
+
+How to Use Css in a HTML file
+=============================
+add <style> in <head>
+
+
+How to Add Bootstrap(Twitter)
+====================
+include bootstrap CDN link in <head> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+How to add Javascript
+======================
+use <script> in html file
