@@ -10,7 +10,7 @@ How to Use VisualStudioCode
 3. Create an HTML file & content
    !  (generates HTML boilerplate code)
 
-4. To RUn HTML file, use the below shortcut
+4. To Run HTML file, use the below shortcut
    alt + b
    alt + shift + b
 
