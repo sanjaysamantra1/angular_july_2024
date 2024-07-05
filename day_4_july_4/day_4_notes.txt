@@ -61,6 +61,3 @@ Eliminate Render-Blocking JavaScript
 3. With async attribute,script in the head
 4. With defer attribute,script in the head
 
-parse HTML - 2sec
-fetch js   - 1sec
-execute js   - 1sec
