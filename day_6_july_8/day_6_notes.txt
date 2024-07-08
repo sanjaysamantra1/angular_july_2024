@@ -1,0 +1,69 @@
+datatypes:
+=========
+-Types of data we are dealing with.
+-JavaScript provides different data types to hold different types of values.
+-two types of data types : 
+	1.primitive  	(number,string,boolean,undefined,null,symbol,bigInt)
+	2.Non-primitive (object references - Object)
+-difference between primitives and non-primitives is that primitives are immutable and 
+ non-primitives are mutable.
+	var str = 'This is a string.';
+	str[1] = 'H'
+	console.log(str); // 'This is a string.'
+-Mutable values are those which can be modified after creation.
+-Immutable values are those which cannot be modified after creation.
+-primitives are compared by values whereas non-primitives are compared by references.
+-primitive value will always be exactly equal to another primitive with an equivalent value.
+    const first = "abc" + "def";
+	const second = "ab" + "cd" + "ef";
+	console.log(first === second); // true
+-equivalent non-primitive values will not result in values which are exactly equal.
+    const obj1 = { name: "sanjay" };
+	const obj2 = { name: "sanjay" };
+	console.log(obj1 === obj2); // false
+-'typeof' is used to check datatype of a value.
+
+
+  Primitive							Non-primitive/Complex
+  --------------					-------------------------
+  1. number							1. Object (Object & Array)
+  2. string								
+  3. boolean(true,false)
+  4. undefined(undefined)
+  5. null
+  6. symbol(ES-6)
+  7. bigint (const x = 2n ** 53n;)
+     appending n to the end of an integer literal
+
+
+
+null vs undefined
+------------------
+-undefined means "not initialized".it means a variable is declared but not initialized yet.
+-null means "the intentional absence of any object value". null is an assigned value. It means nothing.
+-A variable initialized with undefined means that the variable has no value or object assigned to it 
+ while null means that the variable has been set to an object whose value is undefined.
+-Both null and undefined are falsy values.
+-The JSON data format does not support undefined, supports only null;
+-JSON.stringify({a: undefined, b: null}) -->{"b":null}
+-even though typeof null === 'object', null is a still primitive value. 
+	ex: null == null;   //true
+
+
+symbol
+======
+-Symbols are often used to add unique property keys to an object that won’t collide with keys.
+-create a symbol by calling the Symbol(), not by using new keyword.
+ let sym1 = Symbol()  // correct
+ let sym2 = new Symbol()  // TypeError
+-Even if we create many symbols with the same description, they are different values.
+ Symbol('foo') === Symbol('foo')  // false
+-Symbols allow us to create “hidden” properties of an object, 
+ that no other part of code can accidentally access or overwrite.
+-If we want to use a symbol in an object literal,we need square brackets around it.
+ let id = Symbol('User Id');
+ let user = {name:'sanjay',[id]:123}
+-Symbols are not enumerated,Symbols are skipped by for…in while we iterate object properties.
+-Symbols are not part of the Object.keys() or Object.getOwnPropertyNames()
+-Symbols assigned to an object can be accessed using the Object.getOwnPropertySymbols() method
+-Object.assign() copies both string and symbol properties.

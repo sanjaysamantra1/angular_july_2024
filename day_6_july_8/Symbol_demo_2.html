@@ -1,0 +1,27 @@
+<script>
+    let user = {};
+
+    user['name'] = 'sanjay';
+    user['age'] = 50;
+
+    let id = Symbol('this is a hidden key');
+    user[id] = 12345;
+    console.log(user);
+
+    user['name'] = 'deepak';
+    user['age'] = 55;
+    console.log(user);
+
+    for (key in user) {
+        console.log(key + "-----" + user[key])
+    }
+
+    let allKeys = Object.keys(user);
+    console.log(allKeys);
+
+    let allSymbols = Object.getOwnPropertySymbols(user);
+    console.log(allSymbols);
+
+    let user2 = Object.assign({}, user);
+    console.log(user2);
+</script>

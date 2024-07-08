@@ -1,0 +1,18 @@
+<script>
+    // primitives are compared by values whereas non-primitives are compared by references.
+    var a = 10;
+    var b = 10;
+    console.log(a == b); // true (compared ba value)
+
+    var str1 = 'sachin'
+    var str2 = 'sachin'
+    console.log(str1 == str2); // true (value comparision)
+
+    let obj1 = { a: 10, b: 20 }
+    let obj2 = { a: 10, b: 20 }
+    console.log(obj1 == obj2);  //  false (reference compare)
+
+    let arr1 = [10, 20]
+    let arr2 = [10, 20]
+    console.log(arr1 == arr2)
+</script>

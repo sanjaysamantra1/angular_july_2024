@@ -1,0 +1,12 @@
+<script>
+    var a; // no value assigned to it, undefined gets assigned 
+    var b = null;
+
+    console.log(a, typeof a); // undefined   undefined  
+    console.log(b, typeof b); // null     Object
+
+    // if typeof null is 'object' , null is a primitive value or non-primitive value?
+    console.log(null == null); // true (value compare)
+    console.log({} == {}); // true (value compare)
+    console.log([] == []); // true (value compare)
+</script>
