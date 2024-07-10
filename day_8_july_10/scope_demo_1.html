@@ -1,0 +1,15 @@
+<script>
+    let a = 10;
+    console.log('global: ', a);
+
+    function f1() {
+        let a = 20;
+        console.log('function: ', a);
+        
+        if (true) {
+            let a = 30;
+            console.log('Block: ', a);
+        }
+    }
+    f1();
+</script>

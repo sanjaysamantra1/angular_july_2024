@@ -1,0 +1,17 @@
+<script>
+    function f1() {
+        var a = 10; // function scoped
+        console.log(a);
+
+        if (true) {
+            var name = 'sanjay'; // ideally the scope should be block
+            console.log('block: ', name); // sanjay
+        }
+        console.log('function: ', name); // sanjay
+    }
+    f1();
+
+    console.log(a); // not visible in global scope
+
+    // Note:variables declared inside block using 'var' are not restricted to that block
+</script>
