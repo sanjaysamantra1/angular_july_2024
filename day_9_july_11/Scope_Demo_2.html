@@ -1,0 +1,22 @@
+<script>
+    function varTest() {
+        var a = 10; // Function Scoped
+        if (true) {
+            var b = 20; // declared in a block , scope of b is 'function'
+            console.log('Block: ', a, b);
+        }
+        console.log('Function: ', a, b);
+    }
+    varTest();
+    // using 'var' block scoped variables cann't be created
+
+    function letTest() {
+        var x = 100;
+        if (true) {
+            let y = 200;
+            console.log('Block: ', x, y); // 100 200
+        }
+        console.log('Function: ', x, y); // error : y is not defined
+    }
+    letTest();
+</script>

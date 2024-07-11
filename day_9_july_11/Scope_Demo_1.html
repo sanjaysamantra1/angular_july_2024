@@ -1,0 +1,22 @@
+<script>
+    var a = 10;
+    let b = 20;
+    const c = 30;
+
+    function f1() {
+        var d = 40; // Function
+        e = 50; // Global
+        console.log('F1 starts')
+        console.log(a, b, c, d, e)
+        console.log('F1 Ends')
+    }
+    function f2() {
+        console.log('F2 starts')
+        console.log(a, b, c)
+        // console.log(d)
+        console.log(e)
+        console.log('F2 Ends')
+    }
+    f1()
+    f2()
+</script>

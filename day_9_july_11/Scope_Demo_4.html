@@ -1,0 +1,23 @@
+<script>
+    function f1() {
+        var a = 10;
+        if (true) {
+            console.log(a); // 10
+            var a = 15;
+            console.log(a);  // 15
+        }
+        console.log(a); // 15
+    }
+    f1();
+
+    function f2() {
+        let x = 10;
+        if (true) {
+            // console.log(x); // 10
+            let x = 15;
+            console.log(x);  // 15
+        }
+        console.log(x); // 10
+    }
+    f2();
+</script>

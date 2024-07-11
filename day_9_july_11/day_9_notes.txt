@@ -1,0 +1,33 @@
+Use Strict
+==========
+-provides better coding standard and stronger error checking.
+-'use strict' is only recognized at the beginning of a script or a function.
+-JavaScript modules are automatically in strict mode, with no statement needed to initiate it.(import/export)
+-The purpose of "use strict" is to execute the javascript in "strict mode".
+-when 'use strict' is not written, browser runs the JS in normal mode.
+-when 'use strict' is  written, browser runs the JS in strict mode.
+-Strict mode changes some previously-accepted mistakes into errors.
+
+
+1. variable declaration without var/let/const is not allowed.
+   makes it impossible to accidentally create global variables.
+2. function with duplicate arguements are not allowed.
+3. NaN/undefined/Infinity cann't be used as a variable name.
+4. Delete of an unqualified identifier in strict mode. 
+    ex:delete Object.prototype; 
+	var x = 5; delete x;
+5. Multiple assignments not allowed.
+   var a = b = c = 3;
+6. 'this' is undefined, when a function is invoked from Global Context in strict mode.
+
+
+
+Variables Scopes
+================
+1. Global    - inside a script , anywhere in the script
+2. function  - inside a function , only inside that function
+3. Block     - inside a block(if,else,for,try,catch),only inside that block
+
+
+
+

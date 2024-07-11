@@ -1,0 +1,14 @@
+<script>
+    a = 10;
+
+    function f1() {
+        b = 20; // declared inside a function
+        if (true) {
+            c = 30; // declared inside a block 
+        }
+    }
+    f1();
+    console.log(a, b, c);
+
+    // Note: when variables are declared without var/let/const , they are always global variables(no matter where they are declared)
+</script>
