@@ -39,3 +39,4 @@ Limitation of Arrow Function
 Benefits Of Arrow
 =================
 1. Use arrow function, when 'this' is expected to be static
+2. arrow functions can be used as callbacks, but not regular functions

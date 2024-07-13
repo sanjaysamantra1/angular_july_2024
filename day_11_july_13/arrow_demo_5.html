@@ -1,0 +1,26 @@
+<script>
+    class Employee {
+        name = 'deepak';
+        sal = 5000;
+
+        f1() { // this = emp
+            console.log('f1 ', this.name, this.sal);
+
+            var that = this;
+            function f2() { // this = undefined
+                // console.log(this);
+                // console.log('f2 ', this.name, this.sal);
+                console.log('f2 ', that.name, that.sal);
+            }
+            f2();
+
+            let f3 = () => { // this = where this function is written
+                console.log('f3 ', this.name, this.sal);
+            }
+            f3();
+
+        }
+    }
+    let emp = new Employee();
+    emp.f1();
+</script>

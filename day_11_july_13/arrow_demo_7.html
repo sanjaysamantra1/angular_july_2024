@@ -1,0 +1,22 @@
+<script>
+    class Employee {
+        name = 'deepak';
+        sal = 5000;
+        displayInfo1() {
+            console.log(this.name, this.sal)
+        }
+        displayInfo2 = () => {
+            console.log(this.name, this.sal)
+        }
+    }
+    let emp = new Employee();
+    emp.displayInfo1();
+    emp.displayInfo2();
+
+    function test(fn){
+        console.log('I am test function');
+        fn();
+    }
+    // test(emp.displayInfo1);
+    test(emp.displayInfo2);
+</script>
