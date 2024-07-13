@@ -1,0 +1,41 @@
+Functions 
+=========
+-function is a block of code/statements designed to perform a particular task.
+-function is executed only when that gets invoked/called.
+
+Type:
+1. Pre-Defined / in-built (console.log(),document.write(), Math.max())
+2. user-defined 
+
+
+a. Function Declaration (Named Function)
+b. Function Expression  (anonymous)
+c. IIFE/Self-Invoked   (Immediately invoked function expression)
+d. Arrow Function
+
+
+Arrow Function
+==============
+-Less code
+-Implicit return
+
+
+How 'this' works in normal & arrow function
+===========================================
+-Normal 
+    a. 'this' is dynamic 
+    b. this = how the function is called , from where the function is called
+-Arrow
+    a. 'this' is static
+    b.  this = where the function is written/declared
+
+
+Limitation of Arrow Function
+==============================
+1. Don't use arrow function as object methods.
+2. Don't Use arrow function, if 'this' should be dynamic
+
+
+Benefits Of Arrow
+=================
+1. Use arrow function, when 'this' is expected to be static

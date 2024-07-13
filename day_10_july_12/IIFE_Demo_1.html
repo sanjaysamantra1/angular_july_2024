@@ -1,0 +1,12 @@
+<script>
+    function varTest() {
+        if (true) {
+            (function () {
+                var a = 10;  // function
+                console.log('block: ', a)
+            })();
+        }
+        console.log('function: ', a)
+    }
+    varTest();
+</script>

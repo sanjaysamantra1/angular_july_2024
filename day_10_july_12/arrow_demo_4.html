@@ -1,0 +1,22 @@
+<script>
+    class Employee {
+        id = 101;
+        name = 'deepak';
+        sal = 5000;
+
+        displayInfo1() { // Regular : this = how it is called , this = Employee Object
+            console.log(this)
+            console.log(this.id, this.name, this.sal)
+        }
+        displayInfo2 = () => {  // Arrow : this = where it is written , this = Employee Object
+            console.log(this)
+            console.log(this.id, this.name, this.sal)
+        }
+    }
+    let emp = new Employee();
+    emp.displayInfo1();
+    emp.displayInfo2();
+
+    setTimeout(emp.displayInfo1, 2000)
+    setTimeout(emp.displayInfo2, 4000)
+</script>

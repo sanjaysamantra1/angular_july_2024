@@ -1,0 +1,30 @@
+<script>
+    // Function Declaration
+    function add(a, b) {
+        console.log(a + b)
+    }
+    add(2, 3);
+    add(3, 4);
+
+    // Function Expression
+    let sub = function (a, b) {
+        console.log(a - b);
+    }
+    sub(20, 10);
+
+    // Declaration vs Expression
+    // 1. declaration (named)   , function expression is anonymous
+    // 2. declaration (Hoisting) , expression (hoisting-no)
+
+    // IIFE
+    (function (a, b) {
+        console.log(a * b);
+    })(4, 5);
+    // the function can be invoked only 1 time
+
+    // Arrow Function (ES-6)
+    let div = (a, b) => {
+        console.log(a - b);
+    }
+    div(20, 10);
+</script>
