@@ -9,3 +9,8 @@ function closure
 -An outer function will never have 'closure' scope
 
 -An inner function will not have 'closure' scope, if the inner function is not accessing outer function variables.
+
+Assignment
+============
+create 1 application with 3 buttons increment, decrement & reset.
+and implement increment, decrement & reset functionality using closure.
