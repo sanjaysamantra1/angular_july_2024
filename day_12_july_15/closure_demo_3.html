@@ -1,0 +1,26 @@
+<body>
+
+    <button onclick="sayHi()">Hiii</button>
+    <button onclick="incrementCount()">increment</button>
+    <h1>Count Value:: <span>0</span></h1>
+
+    <script>
+        function initializeCount() {
+            var count = 0; // 1
+            return function () {
+                count++;
+                document.querySelector('span').innerText = count; //n
+            }
+        }
+        let incrementCount = initializeCount();
+        console.log(incrementCount);
+        console.dir(incrementCount);
+
+
+        function sayHi() {
+            console.log('Hiiiiiiii');
+            count++;
+            document.querySelector('span').innerText = count;
+        }
+    </script>
+</body>

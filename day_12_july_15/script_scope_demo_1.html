@@ -1,0 +1,19 @@
+<script>
+    var a = 10;
+    let b = 20;
+    const c = 30;
+
+    function f1() {
+        console.log(a, b, c)
+    }
+    function f2() {
+        console.log(a, b, c)
+    }
+    f1();
+    f1();
+    console.dir(f1);
+
+    console.log(this.a); // this = window
+    console.log(this.b); // this = window
+    console.log(this.c); // this = window
+</script>

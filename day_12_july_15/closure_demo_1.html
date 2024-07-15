@@ -1,0 +1,14 @@
+<script>
+    var a = 10;
+    function f1() {
+        let b = 20;
+        function f2() {
+            let c = 30;
+            console.log(a, b, c);
+        }
+        f2();
+        console.dir(f2);
+    }
+    f1();
+    console.dir(f1);
+</script>

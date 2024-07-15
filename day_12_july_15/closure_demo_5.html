@@ -1,0 +1,20 @@
+<script>
+    // const [color, setColor] = useState("Default value");  // react
+
+    function useState(defaultVal) {
+        let value = defaultVal;
+        function getValue() {
+            return value;
+        }
+        function setValue(updatedVal) {
+            value = updatedVal
+        }
+        return [getValue, setValue];
+    }
+    const [color, setColor] = useState("Red");
+    console.log(color());  // read
+    setColor('Blue');   // update
+    console.log(color());
+
+    console.dir(color)
+</script>
