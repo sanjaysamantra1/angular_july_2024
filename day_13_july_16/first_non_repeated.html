@@ -1,0 +1,13 @@
+<script>
+    // first non-repeated character (R)
+    let str = 'entertainment';
+
+    for (let char of str) {
+        let firstInd = str.indexOf(char);
+        let lastInd = str.lastIndexOf(char);
+        if (firstInd === lastInd) {
+            console.log('Non repeated char:: ', char);
+            break;
+        }
+    }
+</script>

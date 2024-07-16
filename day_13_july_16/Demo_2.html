@@ -1,0 +1,28 @@
+<script>
+    // a. string literal  b. string object
+    let str1 = 'sachin';
+    let str2 = 'sachin'; // string literal
+    let str3 = new String('sachin'); // string Object
+    let str4 = new String('sachin'); // string Object
+
+    console.log(typeof str1, typeof str3); // string   object
+
+    console.log(str1 == str2) // true (compares value)
+    console.log(str1 == str3) // true (compares value)
+    console.log(str1 === str3) // false 
+
+    console.log(str3 == str4) // false (compares address)
+    console.log(str3 === str4) // false (compares address)
+    console.log(str1.toUpperCase());
+
+    let s1 = '2+3+4';
+    console.log(eval(s1)); // eval() can evaluate string literal
+
+    let s2 = new String('2+3+4');
+    console.log(eval(s2)); // eval() cann't evaluate string Object
+
+    // How to convert string Object to string literal
+    let s3 = s2.valueOf(); // valueOf() converts string object to string literal
+    console.log(eval(s3)); 
+
+</script>
