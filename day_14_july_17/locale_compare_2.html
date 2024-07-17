@@ -1,0 +1,29 @@
+<script>
+    let employees = [
+        { eId: 101, name: 'sanjay', sal: 5000, gender: 'male' },
+        { eId: 104, name: 'geeta', sal: 8000, gender: 'female' },
+        { eId: 103, name: 'sameer', sal: 7000, gender: 'male' },
+        { eId: 102, name: 'sita', sal: 9000, gender: 'female' },
+        { eId: 105, name: 'deepak', sal: 8000, gender: 'male' },
+    ];
+    // default sort(), can only sort strings
+    // cann't sort numbers, objects
+    let res1 = employees.sort();
+    console.log(res1)
+
+    let res2 = employees.sort((emp1, emp2) => emp1.eId - emp2.eId);
+    console.log(res2)
+    // sort() is expecting -ve , +ve , 0
+
+    let res3 = employees.sort((emp1, emp2) => {
+        /* if (emp1.name < emp2.name) {
+            return -1;
+        } else if (emp1.name > emp2.name) {
+            return 1;
+        } else {
+            return 0;
+        } */
+        return emp1.name.localeCompare(emp2.name)
+    });
+    console.log(res3)
+</script>

@@ -1,0 +1,24 @@
+<script>
+    let str1 = 'sanjay';
+    let str2 = 'sachin';
+
+    console.log(10 - 20); // -10
+    console.log(20 - 10); // 10
+
+    console.log(str1 - str2); // NaN
+    console.log(str1 < str2); // false
+
+
+    let numbers = [10, 9, 7, 8, 8, 101, 105, 91, 82];
+    let res1 = numbers.sort(); // sort() , this is string sort
+    console.log(res1);
+
+    // if you want numeric sort, add your custom logic
+    let res2 = numbers.sort(function (a, b) {
+        console.log(a, b);
+        return a - b;
+    });
+    console.log(res2)
+
+
+</script>

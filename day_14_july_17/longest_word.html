@@ -1,0 +1,13 @@
+<script>
+    let str = 'This is Javascript Class';
+    let words = str.split(' ');
+    let longestWord = '';
+
+    for (let i = 0; i < words.length; i++) {
+        let currentWord = words[i];
+        if (currentWord.length > longestWord.length) {
+            longestWord = currentWord;
+        }
+    }
+    console.log(longestWord)
+</script>
