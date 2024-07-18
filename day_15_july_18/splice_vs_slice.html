@@ -1,0 +1,17 @@
+<script>
+    let arr = [10, 20, 30, 40, 50];
+
+    console.log(arr.slice(1))
+    console.log(arr.slice(1, 3)); // slice creates new array
+    console.log(arr);
+
+    // splice(ind,#element to remove,elements to insert)
+    arr.splice(1, 3, 25); // updates the original array 
+    console.log(arr); // [10,25,50]
+
+    arr.splice(2, 0, 35, 45); // only insert
+    console.log(arr); //[10, 25, 35, 45, 50]
+
+    arr.splice(1, 3); // only delete
+    console.log(arr);// [10,50]
+</script>

@@ -1,0 +1,28 @@
+<script>
+    let cars = ['Tata', 'Honda', 'maruti', 'Toyota']
+
+    // 1. for loop
+    for (let i = 0; i < cars.length; i++) {
+        document.write(cars[i], '<br>');
+    }
+    document.write("============================<br>");
+
+    // 2. for-in loop
+    for (i in cars) {
+        document.write(cars[i], i, '<br>');
+    }
+    document.write("============================<br>");
+
+    // 3. for-of loop
+    for (car of cars) {
+        document.write(car, '<br>');
+    }
+    document.write("============================<br>");
+
+    // 4. forEach() - HigherOrder Function
+    // cars.forEach((ele)=>document.write(ele, '<br>'))
+    function print(ele) {
+        document.write(ele, '<br>')
+    }
+    cars.forEach(print);
+</script>

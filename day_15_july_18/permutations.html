@@ -1,0 +1,21 @@
+<script>
+    function permute(str) { // abc
+        if (str.length < 2) return str;
+
+        let result = [];
+        for (let i = 0; i < str.length; i++) {
+            let currentChar = str[i];
+            let remainingStr = str.slice(0, i) + str.slice(i + 1);
+
+            let subPermutations = permute(remainingStr);
+            for (let subPermutation of subPermutations) {
+                result.push(currentChar + subPermutation);
+            }
+        }
+        return result;
+    }
+    let input = prompt('Plz enter a string');
+    // abc acb bca bac cab cba
+    let output = permute(input)
+    console.log(output)
+</script>
