@@ -1,0 +1,25 @@
+<script>
+    // Array of employees(Objects)
+    let employees = [
+        { eId: 101, name: 'sanjay', sal: 5000, gender: 'male' },
+        { eId: 104, name: 'geeta', sal: 8000, gender: 'female' },
+        { eId: 103, name: 'sameer', sal: 7000, gender: 'male' },
+        { eId: 102, name: 'sita', sal: 9000, gender: 'female' },
+        { eId: 105, name: 'deepak', sal: 8000, gender: 'male' },
+    ];
+    // get the first female employee from this list
+    let firstFemaleEmp = employees.find((emp) => emp.gender === 'female');
+    console.log(firstFemaleEmp)
+
+    // get the index of first female employee
+    let indFirstFemaleEmp = employees.findIndex((emp) => emp.gender === 'female');
+    console.log(indFirstFemaleEmp)
+
+    // get the last female employee from this list
+    let lastFemaleEmp = employees.findLast((emp) => emp.gender === 'female');
+    console.log(lastFemaleEmp)
+
+    // get all the female employees 
+    let allFemaleEmp = employees.filter((emp) => emp.gender === 'female');
+    console.log(allFemaleEmp)
+</script>

@@ -1,0 +1,11 @@
+<script>
+    let sentences = ['this is javascript class', 'this is string class'];
+
+    let wordsFromMultipleSentence = sentences.map((sentence) => sentence.split(' '));
+    let allWords = wordsFromMultipleSentence.flat();
+    console.log(allWords);
+
+    allWords.sort((a, b) => b.length - a.length); // ascending
+    console.log(allWords)
+    console.log(allWords[0]);
+</script>

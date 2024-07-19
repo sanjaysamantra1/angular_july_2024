@@ -1,0 +1,14 @@
+<script>
+    let arr1 = [10, 20, 30, 40, 50];
+
+    let arr2 = arr1.map((val) => val + 5);
+    console.log(arr2);
+
+    let arr3 = arr1.map((val, ind) => {
+        if (ind % 2 == 0) {
+            val = val + 5;
+        }
+        return val;
+    })
+    console.log(arr3);
+</script>

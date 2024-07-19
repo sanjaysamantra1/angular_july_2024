@@ -1,0 +1,11 @@
+<script>
+    let arr = [10, 20, 30, 40, 50];
+
+    // reduce(CB,Default)
+    // we can igone passing default, when every element and result are of same datatype
+    let sum = arr.reduce((prev, curr) => {
+        console.log(prev, curr);
+        return prev + curr;
+    },0);
+    console.log(sum)
+</script>

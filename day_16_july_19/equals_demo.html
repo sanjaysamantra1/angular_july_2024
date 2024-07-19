@@ -1,0 +1,24 @@
+<script>
+    console.log(5 == '5'); // true
+    console.log(5 === '5'); // false
+
+    console.log(1 == true); // true
+    console.log(1 === true); // false
+
+    console.log(false == 0); // false
+    console.log(false === 0); // false
+
+    console.log(undefined == null); // true
+    console.log(undefined === null); // true
+
+    console.log([] == []); // false
+    console.log([] === []); // false
+
+    console.log({} == {}); // false
+
+    let str1 = new String('sachin')
+    let str2 = new String('sachin')
+    console.log(str1 == str2); // false
+    console.log(str1 == 'sachin'); // true
+    console.log(str1 === 'sachin'); // false
+</script>
