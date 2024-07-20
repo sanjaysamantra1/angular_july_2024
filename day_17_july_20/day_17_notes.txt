@@ -1,0 +1,17 @@
+
+Array Copy
+==========
+let arr1 = [10, 20];
+let arr2 = arr1;  // address/reference copy ( Not value copy)
+-A new array is not being created, rather same address is being assigned to arr2
+-Both arr1 & arr2 are holding the same address
+
+let arr1 = [10, 20, [30, 31]];
+let arr2 = [...arr1]; // value copy - shallow copy
+
+let arr3 = [10, 20, [30, 31]];
+let arr4 = structuredClone(arr3); // value copy - Deep Copy
+
+-A shallow copy of an array is a copy whose nested elements share the same references.
+ (Nested arrays will not be copied by value)
+-A deep copy of an array is a copy whose nested elements do not share the same references.

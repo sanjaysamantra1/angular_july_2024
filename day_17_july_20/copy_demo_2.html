@@ -1,0 +1,25 @@
+<script>
+    let cars = ['tata', 'honda'];
+    let cars2 = cars;   // reference copy
+    cars.push('maruti');
+    cars2.push('toyota');
+    console.log(cars);
+    console.log(cars2);
+
+
+    let arr1 = [10, 20, [30, 31]];
+    let arr2 = [...arr1]; 
+    // shallow copy - top:copy by value,nested arrays:copy by reference
+    arr2.push(40);    // 40 will be seen only in arr2, not in arr1
+    arr2[2].push(32, 33); // in arr1's & arr2's nested array 32,33 will be there
+    console.log(arr1)
+    console.log(arr2)
+
+
+    let arr3 = [10, 20, [30, 31]];
+    let arr4 = structuredClone(arr3); // Deep Copy-everything is copied by value
+    arr4.push(40);         // 40 will be there in arr4, but not in arr3
+    arr4[2].push(32, 33);  
+    console.log(arr3)
+    console.log(arr4)
+</script>
