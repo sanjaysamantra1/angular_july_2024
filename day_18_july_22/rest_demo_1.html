@@ -1,0 +1,27 @@
+<script>
+    function add2(a, b) {
+        console.log(a + b);
+    }
+    add2(2, 3);
+
+    function add3(a, b, c) {
+        console.log(a + b + c);
+    }
+    add3(2, 3, 4);
+
+    // can we have a function which can add variable(2,3,4,5) number of arguments
+    // ES-5
+    function sum() {
+        console.log(arguments)
+        console.log(Array.isArray(arguments))
+        // arguments.filter(ele=>ele%2==0);
+        let res = 0;
+        for (ele of arguments) {
+            res = res + ele;
+        }
+        console.log(res)
+    }
+    sum(10, 20)
+    sum(10, 20, 30)
+    sum(10, 21, 30, 41)
+</script>

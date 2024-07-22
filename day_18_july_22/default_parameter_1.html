@@ -1,0 +1,17 @@
+<script>
+    // es-5
+    function add(a, b, c) {
+        a = a || 0;
+        b = b || 0;
+        c = c || 0;
+        console.log(a + b + c); // NaN
+    }
+    add(2, 3);
+
+    // ES_6
+    function sum(a, b, c = 0) {
+        console.log(a + b + c);
+    }
+    sum(2, 3, 4)
+    sum(2, 3)
+</script>

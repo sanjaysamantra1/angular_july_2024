@@ -1,0 +1,15 @@
+<script>
+    function add(...arr) {  // REST parameter
+        // console.log(arr);
+        // console.log(Array.isArray(arr));
+
+        let sum = 0;
+        for (ele of arr) {
+            sum = sum + ele;
+        }
+        console.log(sum)
+    }
+    add(10, 20)
+    add(10, 20, 30)
+    add(10, 20, 30, 40)
+</script>
