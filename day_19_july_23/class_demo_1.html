@@ -1,0 +1,20 @@
+<script>
+    // normal function
+    function add(a, b) {
+        console.log(a + b)
+    }
+    add(2, 3);
+
+    // ES_5
+    function Trainer(name, course, time) { // constructor / creating a structure
+        this.name = name;
+        this.course = course;
+        this.time = time;
+    }
+    let trainer1 = new Trainer('sanjay', 'angular', '8.30 am')
+    let trainer2 = new Trainer('harikrishna', 'corejava', '9.00 am')
+    let trainer3 = new Trainer('sudhakar', 'ReactJS', '6.00 pm')
+    console.log(trainer1)
+    console.log(trainer2)
+    console.log(trainer3)
+</script>

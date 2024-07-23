@@ -1,0 +1,28 @@
+12. From apply() to the spread operator (...)
+13. Enhanced Object Literals
+14. From constructors to classes
+15. inheritance - class,extends
+16. Modules
+17. collection-Map,weakmap,Set,weakset
+18. promise and async-await
+19. generators
+20. Tail Calls
+
+
+class
+======
+-Class is a blueprint/structure for an object
+-class has only logical existance
+`
+
+Object
+======
+-every instance of a class is called Object
+-object has physical existance
+
+
+Prototype
+=========
+-Prototype is an object, where we can attach methods and properties,which enables all the other objects to access these methods and properties.
+-prototype properties/methods will not be there in every object.
+-when we have the same value for aproperty, attach the property to prototype

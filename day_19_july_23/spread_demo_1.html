@@ -1,0 +1,14 @@
+<script>
+    let res1 = Math.max(10, 20, 30);
+    console.log(res1); // 30
+
+    let arr = [60, 20, 30];
+    let res2 = Math.max(arr);
+    console.log(res2); // NaN
+
+    let res3 = Math.max.apply({}, arr); // es-5
+    console.log(res3); // 60
+
+    let res4 = Math.max(...arr); // es-6
+    console.log(res4); // 60
+</script>

@@ -1,0 +1,33 @@
+<script>
+    // ES-6
+    class Student {
+        constructor(roll, name, course, clgName) {
+            this.roll = roll;
+            this.name = name;
+            this.course = course;
+            // this.clgName = 'nareshIT';
+        }
+    }
+    Student.prototype.clgName = 'nareshIT';
+
+    // this class has 3 instance properties,every object should have 3 props
+    let std1 = new Student(101, 'praveen', 'angular')
+    let std2 = new Student(102, 'Deepak', 'React')
+    let std3 = new Student(103, 'geeta', 'java')
+    console.log(std1)
+    console.log(std2)
+    console.log(std3)
+    console.log(std1.clgName); // first it goes and checks in object, then in prototype
+    console.log(std2.clgName);
+    console.log(std1.add);
+
+    std1.clgName = 'nareshInfoTech'; // it creates a new prop in std1 obj
+    console.log(std1.clgName); // nareshInfoTech , direct prop of object
+    console.log(Student.prototype.clgName);
+    console.log(std2.clgName); // nareshIT , prototype
+
+    // nareshIt to NIT
+    Student.prototype.clgName = 'NIT';
+
+
+</script>

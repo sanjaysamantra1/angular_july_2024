@@ -1,0 +1,15 @@
+<script>
+    let user = {
+        fName: 'sachin',
+        lName: 'tendulkar',
+        sal: 3000,
+        fullName: function () { // es-5
+            console.log(this.fName + " " + this.lName)
+        },
+        annualSalary() {  // es-6
+            console.log(this.sal * 12)
+        }
+    }
+    user.fullName();
+    user.annualSalary();
+</script>
