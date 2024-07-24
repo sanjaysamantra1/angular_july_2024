@@ -7,8 +7,8 @@
     function openAccount(initialAmt) { // is not exposing data, exposing methods
         let accBal = initialAmt;
         let accNo = 112233;
-
-        return {
+        // creator of the object
+        return Object.freeze({
             deposit: function (amt) {
                 if (amt < 0) {
                     alert('Sorry, I dont need your money')
@@ -19,9 +19,10 @@
             printBal: function () {
                 console.log(accNo, accBal)
             }
-        }
+        });
     }
     let accountObj = openAccount(3000); // encapsulated object
+    // consuming the object
     console.log(accountObj);
     accountObj.accBal = -500000;
     accountObj.printBal();

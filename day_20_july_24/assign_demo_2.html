@@ -1,0 +1,22 @@
+<script>
+    let obj1 = { a: 10, b: 20, c: { d: 40 } }
+    let obj2 = obj1; // Reference Copy
+    // it doesnt create a new object, same address is stored in 2 variables, obj1,obj2
+    obj2.b = 25;
+    console.log(obj1, obj2)
+
+    let obj3 = Object.assign({}, obj1); // shallow copy (ES_5), copy by value
+    let obj4 = { ...obj1 } // shallow copy (ES_6)
+    obj3.a = 12;
+    obj4.a = 14;
+    obj3.c.d = 45;
+    console.log(obj1)
+    console.log(obj3)
+    console.log(obj4)
+    // Note:shallow copy-nested objects are copied by reference
+
+    // Deep Copy: copy everything by value
+    let obj5 = structuredClone(obj1);
+    let obj6 = JSON.parse(JSON.stringify(obj1)); // earlier
+
+</script>

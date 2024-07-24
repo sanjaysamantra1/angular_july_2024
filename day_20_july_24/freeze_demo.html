@@ -1,0 +1,19 @@
+<script>
+    let obj1 = { a: 10, b: 20 } // obj1 is open for everything
+    console.log(obj1.a); // Read - yes
+    obj1.c = 30 // add a new prop - yes
+    obj1.b = 25; // update the value  - yes
+    delete obj1.a; // delete a prop
+    console.log(obj1);
+
+    let obj2 = { a: 100, b: 200 };
+    Object.freeze(obj2);
+    console.log(obj2.a); // read prop - yes
+    obj2.c = 300; // add a new prop - No
+    delete obj2.a; // delete - no
+    obj2.b = 250; // update value of a  prop - No
+    console.log(obj2);
+
+    console.log(Object.isFrozen(obj1)); // false
+    console.log(Object.isFrozen(obj2)); // true
+</script>

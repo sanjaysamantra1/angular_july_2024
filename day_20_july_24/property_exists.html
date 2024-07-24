@@ -1,0 +1,22 @@
+<script>
+    // ES-6
+    class Student {
+        constructor(roll, name) {
+            this.roll = roll;
+            this.name = name;
+        }
+    }
+    Student.prototype.clgName = 'nareshIT';
+
+    let std1 = new Student(101, 'Pradeep');
+    console.log(std1.roll, std1.name, std1.clgName);
+
+    console.log(std1.hasOwnProperty('age'));  // false
+    console.log(std1.hasOwnProperty('course')); // false
+    console.log(std1.hasOwnProperty('clgName')); // false
+    console.log(std1.hasOwnProperty('roll')); // true
+
+    console.log('name' in std1); // true
+    console.log('clgName' in std1); // true (in checks prototype aswell)
+    console.log('course' in std1); // false
+</script>

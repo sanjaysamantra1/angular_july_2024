@@ -1,0 +1,23 @@
+<script>
+    let user = { name: 'sachin', age: 35, add: 'mumbai' };
+    // why JSON.stringify() , objects cann't be printed on the screen
+    // objects cann't be stored in offline storage, cann't be alerted
+    localStorage.setItem('userObj', user); // No
+    document.write(user)
+    alert(user)
+
+    // convert object to json string
+    let userStr = JSON.stringify(user);
+    localStorage.setItem('userObj', userStr);
+    document.write(userStr)
+    alert(userStr);
+
+    // Why JSON.parse();
+    let myUser = localStorage.getItem('userObj');
+    console.log(typeof myUser); // myUser is a string
+    console.log(myUser.age); // we cann't read age from a string
+
+    // conver that string back to object
+    let userObj = JSON.parse(myUser);
+    console.log(userObj.age)
+</script>

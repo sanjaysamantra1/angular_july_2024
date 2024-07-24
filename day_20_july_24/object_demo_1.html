@@ -1,0 +1,24 @@
+<script>
+    let user = { name: 'sachin', 'last name': 'tendulkar', age: 35, add: 'mumbai' };
+
+    console.log(user.name); // sachin
+    console.log(user['name']); // sachin
+
+    // 1. when key contains space, use [] 
+    // console.log(user.last name);
+    console.log(user['last name']);
+
+    // when the key is stored as value in a variable
+    let a = 'age';
+    console.log(user.a); // undefined , looks for 'a' property in user object
+    console.log(user[a]); // value of a is 'age', look for age prop in user object
+
+    // print all the key & values of user object
+    for (key in user) {
+        console.log(key + "=========" + user[key]);
+    }
+
+    console.log(user.length);
+    let allKeys = Object.keys(user);
+    console.log(allKeys, allKeys.length)
+</script>
